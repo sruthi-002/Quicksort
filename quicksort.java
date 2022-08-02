@@ -1,4 +1,6 @@
-﻿import java.util.Arrays;
+package com.company;
+import java.util.*;
+import java.util.Scanner;
 class Quicksort {
   static int partition(int array[], int low, int high) {
     int pivot = array[high];
@@ -26,11 +28,13 @@ class Quicksort {
 }
 class Main {
   public static void main(String args[]) {
-    int n = in.nextInt();
-    int[] a =new a[n];
-    for(i=0;i<n;i++)
-      a[i] = in.nextInt();
-    Quicksort.quickSort(a, 0, n- 1);
-    System.out.println(Arrays.toString(a));
+    Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int i;
+        int[] a =new int[n];
+        for(i=0;i<n;i++)
+            a[i] = in.nextInt();
+        Quicksort.quickSort(a, 0, n- 1);
+        System.out.println(Arrays.toString(a));
   }
 }
